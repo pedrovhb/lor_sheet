@@ -2,11 +2,11 @@
     import {enabledCards} from '../store'
 </script>
 
-<div class="w-3/4 m-auto flex justify-center h-64 p-3 shadow my-6">
-    <textarea bind:value={$enabledCards} class="w-1/3 mx-4 "></textarea>
-    <div class="w-2/3 mx-4 text-center flex flex-col justify-around rounded ">
-        <p>Click the filters above to select your opponent's region and to toggle showing only quick+burst spells.</p>
-        <p>Use the text field on the left to enable or disable cards from being shown.</p>
-        <p>Cards will only be enabled if their exact name is matched, so you can add a "#" to exclude them.</p>
+<div class="w-3/4 m-auto flex flex-col justify-center p-3 shadow my-6">
+    <div class="mx-4 text-center">
+        <p class="my-2">Click the filters above to select your opponent's region and to toggle showing only quick+burst spells.</p>
+        <p class="my-2">Use the text field on below to enable or disable cards from being shown.</p>
+        <p class="my-2">Cards will only be enabled if their exact name is matched, so you can add a "#" to exclude them.</p>
     </div>
+    <textarea bind:value={$enabledCards} class="mx-4 my-6" cols="50" rows="6"></textarea>
 </div>
