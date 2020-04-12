@@ -552,6 +552,10 @@ img {
   margin-bottom: 1.5rem;
 }
 
+.opacity-25 {
+  opacity: 0.25;
+}
+
 .overflow-auto {
   overflow: auto;
 }

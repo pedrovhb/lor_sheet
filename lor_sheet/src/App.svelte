@@ -7,6 +7,7 @@
 </script>
 
 <main>
+    <div class="opacity-25"></div>
     <OpponentSelector/>
 	<CardsGrid/>
     <CardPicker />
