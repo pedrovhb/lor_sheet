@@ -1,2 +1,1 @@
-<p class="text-center">Made with &lt;3 and <a class="text-blue-600" href="https://svelte.dev/">Svelte</a> by
-    <a href="">Pedro</a>.</p>
+<p class="text-center">Made with &lt;3 and <a class="text-blue-600" href="https://svelte.dev/">Svelte</a> by <a href="https://github.com/pedrovhb/lor_sheet" class="text-blue-600">Pedro</a>.</p>
