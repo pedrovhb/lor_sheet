@@ -10,6 +10,9 @@
   "Back to Back",
   "For Demacia!",
   "Purify",
+  "Ranger's Resolve",
+  "Concerted Strike",
+  "Unyielding Spirit",
 
   "Avalanche",
   "Winter's Breath",
@@ -49,9 +52,11 @@
   "Guile",
   "Intimidating Roar",
   "Arachnoid Sentry",
+  "Death's Hand",
 
   "Thermogenic Beam",
   "Mystic Shot",
+  "Suit Up!",
   "Get Excited!",
   "Augmented Experimenter",
   "Statikk Shock",
@@ -68,5 +73,18 @@
   "Withering Wail",
   "The Ruination",
   "Mark of the Isles",
-  "Possession"
+  "Possession",
+
+  "Warning Shot",
+  "Parrrley",
+  "Make it Rain",
+  "More Powder!",
+  "Playful Trickster",
+  "Riptide",
+  "Double Up",
+  "Strong-arm",
+  "Scrapshot",
+  "Twisted Fate",
+  "Citrus Courier",
+  "Riptide Rex"
 ]
