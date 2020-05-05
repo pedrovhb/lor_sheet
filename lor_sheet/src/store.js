@@ -8,11 +8,11 @@ function getRegionsMap() {
 }
 
 function getManaSortedCards() {
-    return baseCards.sort((a, b) => a.cost > b.cost);
+    return baseCards.sort((a, b) => a.cost > b.cost ? 1 : -1);
 }
 
 function getEnabledCardsInitialInput() {
-    let nameSortedCards = baseCards.sort((a, b) => a.name > b.name);
+    let nameSortedCards = baseCards.sort((a, b) => a.name > b.name ? 1 : -1);
     let enabledCards = "";
     nameSortedCards.forEach((card) => {
         naughtyCards.includes(card.name)
