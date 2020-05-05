@@ -47,17 +47,23 @@ def get_set_data(set_number):
 
         with zipfile.ZipFile(fd_set.name) as zf:
 
-            print("Writing to webp...")
+            print("Writing images...")
             for file in zf.filelist:
                 filename = os.path.split(file.filename)[-1]
                 base, ext = os.path.splitext(filename)
                 if ext == ".png" and "-alt" not in filename:
                     memfile = io.BytesIO(zf.read(file.filename))
                     im = Image.open(memfile)
-                    output_fpath = os.path.join(
-                        card_image_output_dir, base + ".webp"
-                    )
-                    im.save(output_fpath, "WEBP")
+                    output_fpath = os.path.join(card_image_output_dir, base)
+
+                    # Save webp image
+                    im.save(output_fpath + ".webp", "WEBP")
+
+                    # Save downsized jpg image
+                    jpg = Image.new("RGB", im.size, (255, 255, 255))
+                    jpg.paste(im, mask=im.split()[3])
+                    jpg.thumbnail((900, 900), Image.ANTIALIAS)
+                    jpg.save(output_fpath + ".jpg", "JPEG", quality=70)
 
             # Return json card data
             card_data = zf.read(f"en_us/data/set{set_number}-en_us.json")
