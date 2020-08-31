@@ -84,6 +84,7 @@ for region in core_data["regions"]:
 print("Getting set data...")
 set_data = get_set_data(1)
 set_data.extend(get_set_data(2))
+set_data.extend(get_set_data(3))
 for card in set_data:
     processed_data["cards"].append(
         {
